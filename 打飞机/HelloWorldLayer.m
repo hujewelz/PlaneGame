@@ -87,7 +87,7 @@ static NSInteger kTagBatchNode = 1;
     [plantSprite runAction:repeate];
     
     
-    //这是新的激活层的touch事件的方式
+    //激活层的touch事件的方式
     [[[CCDirector sharedDirector] touchDispatcher]addTargetedDelegate:self priority:0 swallowsTouches:YES];
     //retainCount=2
    // NSLog(@"onEnterTransitionDidFinish5：%d",self.retainCount);
@@ -599,7 +599,7 @@ static NSInteger kTagBatchNode = 1;
                         } else
                             scoreValue += 100;
                         
-                        if (scoreValue >= 10000) {
+                        if (scoreValue >= 5000) {
                             isStartBoss = YES;
                             break;
                         }
@@ -651,8 +651,6 @@ static NSInteger kTagBatchNode = 1;
                         }
                 
                 }
-                
-                
                 
                 [bossbulletSprite release];
             }
